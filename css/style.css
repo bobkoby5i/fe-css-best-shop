@@ -21,7 +21,7 @@
 
 .container {
     margin: 0 auto;
-    max-width: 1352px;
+    max-width: 1124px; /* 1352px; */
     border: #ff4d00 0 solid;
 }
 
@@ -38,6 +38,9 @@ l {
 }
 
 .open-shop-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     background-color: #ffffff;
     height: calc( 100vh - 70px );
     font-family: 'Open Sans', sans-serif;
@@ -46,8 +49,10 @@ l {
 
 
 .open-shop-top{
+    background-color: gold;
+
     display: flex;
-    justify-content: center;
+    justify-content: end;
     flex-direction: column;
     align-items: center;
     padding-top: 130px;
@@ -81,12 +86,12 @@ h2 {
 
 .open-shop-bottom {
     overflow: auto;
-    /*background-color: green;*/
+    background-color: green;
     background-image: url("../images/Background.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: calc(calc( 100vh - 70px )/2);
+    height: 100%;
 }
 
 
@@ -111,13 +116,14 @@ h2 {
 /*          STATS                 */
 
 .stats-section h2{
+    background-color: #b776f8;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
 .stats-section-articles {
-    background-color: #e1e1e1;
+    background-color: #d7aeff;
     display: flex;
     justify-content: center;
     align-items: normal;
@@ -176,6 +182,174 @@ h2 {
 .color3 {
     background-color: var(--color3);
 }
+
+/* benefits-section */
+
+.benefits-section{
+    background-color: #00ff00;
+    padding: 105px 0px;
+}
+
+
+.benefits-section p{
+    color: red;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.benefits-container{
+    display: flex;
+    justify-content: normal;
+    flex-direction: column;
+    justify-items: center;
+    background-color: #4ac94a;
+}
+
+.benefits-articles {
+    display: flex;
+    justify-content: normal;
+    flex-direction: column;
+    background-color: #37da37;
+
+}
+
+.benefits-article-computer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+    height: 370px;
+    background-color: #0e620e;
+}
+
+.benefits-article-computer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: dodgerblue;
+    padding-left: 35px;
+    width: 416px;
+}
+
+
+.benefits-article-computer-text p{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.benefits-article-computer-image {
+    width: 501px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: normal;
+    margin-left: -1;
+    padding-bottom: 38px;
+    background-color: yellow;
+}
+
+
+
+.benefits-article-computer-image img{
+    width: 386px;
+    height: 219px;
+}
+
+.benefits-article-phone {
+    display: flex;
+    margin-bottom: 37px;
+    height: 370px;
+    background-color: #4ff14f;
+}
+
+.benefits-article-phone-image{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 623px;
+    background-color: gold;
+}
+
+.benefits-article-phone-image img{
+    margin-left: 70px;
+    margin-top: 29px;
+    width: 426px;
+    height: 328px;
+}
+
+.benefits-article-phone-text {
+    width: 501px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 65px;
+}
+
+.benefits-article-phone-text p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+
+/* mega phone */
+
+.benefits-article-megaphone {
+    display: flex;
+    height: 370px;
+    background-color: #118511;
+}
+
+
+
+.benefits-article-megaphone-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 623px;
+    background-color: gold;
+    margin-left: 36px;
+    margin-right: 34px;
+}
+
+.benefits-article-megaphone-image {
+    width: 501px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 61px;
+}
+.benefits-article-megaphone-text p{
+    margin-top: 30px;
+}
+
+
+.benefits-article-megaphone-image-div{
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.benefits-article-megaphone-image-div img {
+    margin-left: 62px;
+    margin-top: 98px;
+    width: 295px;
+    height: 208px;
+}
+
+.benefits-article-left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 623px;
+    background-color: gold;
+}
+
+
+
+
+
 
 
 
