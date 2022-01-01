@@ -285,6 +285,9 @@ h2 {
     z-index: 2
 }
 
+
+
+
 .benefits__single--phone {
     --accent-color: var(--color-primary);
     flex-direction: row-reverse;
@@ -301,6 +304,36 @@ h2 {
     position: absolute;
     top: -20px;
     width: 320px
+}
+
+
+
+.benefits__image_phone {
+    position: relative
+}
+
+.benefits__image_phone img {
+    height: auto;
+    width: 426px;
+    position: relative;
+    z-index: 2
+}
+
+.benefits__image_phone:before {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 320px;
+    left: 0;
+    position: absolute;
+    top: -20px;
+    width: 320px
+}
+
+.benefits__image_phone {
+    height: auto;
+    width: 426px
 }
 
 .benefits__single--phone .benefits__image img {
