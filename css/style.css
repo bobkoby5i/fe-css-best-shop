@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 .hidden {
     display: none !important;
 }
@@ -404,8 +407,8 @@ h2 {
 
 /*  --- PRICING --- */
 .pricing {
-    background-color: #9b9b9b;
     border: solid 1px red;
+    margin-bottom: 100px;
 }
 
 .pricing h2 {
@@ -417,26 +420,27 @@ h2 {
 
 .pricing__boxes {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .pricing__box {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
     background-color: yellowgreen;
     border-radius: 18px;
-    height: 400px;
+    /*height: 432px;*/
     text-align: center;
     width: 370px;
 }
 
 .pricing__details {
+    margin-bottom: 60px;
+    margin-top: 34px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -456,11 +460,11 @@ h2 {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    bottom: -25px;
+    position: relative;
 }
 
 .pricing__type{ /* Basic Professional Premium */
-    margin-top: 34px;
-    margin-bottom: 14px;
     font-family: 'Raleway', sans-serif;
     font-size: 21px;
     line-height: 24px;
@@ -476,8 +480,14 @@ h2 {
     font-weight: 300;
     font-size: 46px;
     line-height: 64px;
+    margin-top: 14px;
+    margin-bottom: 5px;
     font-family: 'Open Sans', sans-serif;
     background-color: royalblue;
+}
+
+.pricing__price--basic {
+    margin-bottom: 17px;
 }
 
 .pricing__limited { /* text:limited offer */
@@ -496,7 +506,14 @@ h2 {
 .pricing__box--professional {
     --accent-color: var(--color2);
     width: 400px;
+    margin: 0px 40px;
+    box-shadow: 5px 10px 27px #07ACE629;
 }
+
+.pricing__box--professional .pricing__item {
+    margin-bottom: 25px
+}
+
 
 .pricing__box--premium {
     --accent-color: var(--color3)
@@ -504,7 +521,8 @@ h2 {
 
 
 .pricing__items {
-    text-align: center
+    text-align: center;
+    background-color: yellow;
 }
 
 .pricing__item {
