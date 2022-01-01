@@ -25,6 +25,13 @@
     border: #ff4d00 0 solid;
 }
 
+.container_big {
+    margin: 0 auto;
+    max-width: 1266px; /* 1352px; */
+    border: #ff4d00 0 solid;
+}
+
+
 header{
     display: flex;
     background-color: royalblue;
@@ -397,11 +404,113 @@ h2 {
 
 /*  --- PRICING --- */
 .pricing {
-    background-color: aqua;
+    background-color: #9b9b9b;
+    border: solid 1px red;
+}
+
+.pricing h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: #e1f5ec;
+}
+
+.pricing__boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pricing__box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    background-color: yellowgreen;
+    border-radius: 18px;
+    height: 400px;
+    text-align: center;
+    width: 370px;
+}
+
+.pricing__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: yellow;
+}
+
+.btn-pricing {
+    background-color: var(--accent-color);
+    width: 150px;
+    height: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    border-radius: 23px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.pricing__type{ /* Basic Professional Premium */
+    margin-top: 34px;
+    margin-bottom: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    line-height: 24px;
+    color: #13253B;
+    font-weight: bold;
+    background-color: darkgoldenrod;
 }
 
 
 
+
+.pricing__price { /* 0$ 25$ $60*/
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 64px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: royalblue;
+}
+
+.pricing__limited { /* text:limited offer */
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: black;
+    background-color: #9b8a27;
+}
+
+
+.pricing__box--basic {
+    --accent-color: var(--color1)
+}
+
+.pricing__box--professional {
+    --accent-color: var(--color2);
+    width: 400px;
+}
+
+.pricing__box--premium {
+    --accent-color: var(--color3)
+}
+
+
+.pricing__items {
+    text-align: center
+}
+
+.pricing__item {
+    font-size: 14px;
+    margin-bottom: 20px
+}
 
 
 
@@ -411,4 +520,5 @@ footer {
     background-color: red;
     font-size: 32px;
     font-weight: 300;
+    border: solid 1px red;
 }
