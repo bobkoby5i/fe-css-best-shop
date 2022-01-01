@@ -160,7 +160,7 @@ h2 {
     line-height: 19px;
     color: #A5A5A5;
     font-weight: normal;
-    margin: 0px 40px;
+    margin: 0px 35px;
 
 }
 
@@ -192,7 +192,6 @@ h2 {
 
 
 .benefits-section p{
-    color: red;
     font-size: 16px;
     line-height: 22px;
     font-family: 'Open Sans', sans-serif;
@@ -221,6 +220,8 @@ h2 {
     margin-bottom: 37px;
     height: 370px;
     background-color: #0e620e;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
 }
 
 .benefits-article-computer-text {
@@ -228,8 +229,8 @@ h2 {
     flex-direction: column;
     justify-content: center;
     background-color: dodgerblue;
-    padding-left: 35px;
-    width: 416px;
+    margin-left: 36px;
+    margin-right: 172px;
 }
 
 
@@ -238,13 +239,38 @@ h2 {
     margin-bottom: 50px;
 }
 
+.line1::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 327px;
+    background: var(--color1);
+}
+
+.line2::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 327px;
+    background: var(--color2);
+}
+
+.line3::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 327px;
+    background: var(--color3);
+}
+
+
 .benefits-article-computer-image {
     width: 501px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: normal;
-    margin-left: -1;
+    margin-left: -1px;
     padding-bottom: 38px;
     background-color: yellow;
 }
@@ -261,6 +287,8 @@ h2 {
     margin-bottom: 37px;
     height: 370px;
     background-color: #4ff14f;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
 }
 
 .benefits-article-phone-image{
@@ -287,6 +315,11 @@ h2 {
     padding-left: 65px;
 }
 
+.benefits-article-phone-text h2 {
+    margin-right: 170px;
+}
+
+
 .benefits-article-phone-text p {
     margin-top: 30px;
     margin-bottom: 50px;
@@ -307,22 +340,37 @@ h2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 623px;
+    width: 643px;
     background-color: gold;
-    margin-left: 36px;
-    margin-right: 34px;
+    padding-left: 36px;
+    padding-right: 34px;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
 }
 
 .benefits-article-megaphone-image {
-    width: 501px;
+    width: 451px;
     background-color: yellow;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 61px;
+    margin-left: 51px;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
 }
+
+.benefits-article-megaphone-image h2{
+    margin-right: 172px
+}
+
+.benefits-article-megaphone-text h2 {
+    margin-right: 170px;
+}
+
 .benefits-article-megaphone-text p{
     margin-top: 30px;
+    margin-bottom: 44px;
 }
 
 
@@ -346,6 +394,11 @@ h2 {
     background-color: gold;
 }
 
+
+/*  --- PRICING --- */
+.pricing {
+    background-color: aqua;
+}
 
 
 
