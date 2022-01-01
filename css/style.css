@@ -14,6 +14,16 @@ body {
     --color1: #fb3b64;
     --color2: #08a6e4;
     --color3: #55dfb4;
+
+    --color-primary: #08A6E4;
+    --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-redish: #FB3B64;
+    --color-green: #55DFB4;
+    --color-black: #000000;
+    --color-grey: #A5A5A5;
+    --color-light-grey: #F7F7F7;
+    --color-white: #FFFFFF;
+
 }
 
 .clearfix:after {
@@ -39,7 +49,9 @@ header{
 }
 
 .header_bar {
-    background-color: #41e1c4;
+    background-color: #ff5d87;
+    box-shadow:  0 3px 6px rgb(0 0 0 / 16%);
+    height: 70px;
 }
 
 
@@ -51,6 +63,16 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 70px;
+}
+
+.footer_container{
+    margin: 0 auto;
+    max-width: 1352px; /* 1352px; */
+    background-color: #f3c7ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 89px;
 }
 
 .logo {
@@ -68,6 +90,8 @@ header{
 .page-nav-list{
     /*background-color: darkred;*/
     display: flex;
+    border-top: 0;
+    margin-top: 0;
 }
 
 .nav__element {
@@ -76,22 +100,30 @@ header{
     font-size: 11px;
     line-height: 15px;
     font-weight: bold;
+    border-top: 0;
+    margin-top: 0;
 }
 
 .nav__element:first-child {
-    padding-left: 0
+    padding-left: 0;
+    border-top: 0;
+    margin-top: 0;
 }
 
 .nav__element:last-child {
-    padding-right: 0
+    padding-right: 0;
+    border-top: 0;
+    margin-top: 0;
 }
 
 .nav__link {
-    padding: 28px 26px 24px 26px;
+    padding: 28px 26px 23px 26px;
     text-transform: uppercase;
     text-decoration: none;
     color: #A5A5A5;
     border-bottom: 4px solid #A5A5A5;
+    border-top: 0;
+    margin-top: 0;
 }
 
 
@@ -114,7 +146,7 @@ l {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     height: calc( 100vh - 70px );
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
@@ -178,6 +210,7 @@ h2 {
     padding: 20px 157px 23px 157px;
     background-color: var(--color-primary);
     box-shadow: 5px 10px 14px #07ACE629;
+    box-shadow: 5px 10px 14px rgba(255, 0, 0, 0.6);
     font-weight: 600;
 }
 
@@ -675,9 +708,33 @@ h2 {
 
 
 footer {
+    background-color: #F7F7F7;
+    box-shadow: 0px -5px 40px #00000029;
+}
+
+.footer_logo{
+    font-size: 26px;
+    line-height: 30px;
     font-family: 'Raleway', sans-serif;
-    background-color: red;
-    font-size: 32px;
-    font-weight: 300;
-    border: solid 1px red;
+    color: var(--color2);
+    text-decoration: none;
+}
+
+.footer_text{
+    font-size: 11px;
+    line-height: 15px;
+    color: #A5A5A5;
+    margin-top: 6px
+
+}
+
+.footer_left_box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+.footer_right_box {
+    display: flex;
+    gap: 20px;
 }
