@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #ffffab;
+    /*background-color: #ffffab;*/
 }
 .hidden {
     display: none !important;
@@ -36,14 +36,14 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1124px; /* 1352px; */
-    border: #ff4d00 1px solid;
+    /*border: #ff4d00 1px solid;*/
 
 }
 
 .container_big {
     margin: 0 auto;
     max-width: 1266px; /* 1352px; */
-    border: #ff4d00 0 solid;
+    /*border: #ff4d00 0 solid;*/
 }
 
 header{
@@ -51,7 +51,7 @@ header{
 }
 
 .header_bar {
-    background-color: #ff5d87;
+    /*background-color: #ff5d87;*/
     box-shadow:  0 3px 6px rgb(0 0 0 / 16%);
     height: 70px;
 }
@@ -65,7 +65,7 @@ header{
 .header_container {
     margin: 0 auto;
     max-width: 1352px; /* 1352px; */
-    background-color: #f3c7ff;
+    /*background-color: #f3c7ff;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,7 +75,7 @@ header{
 .footer_container{
     margin: 0 auto;
     max-width: 1352px; /* 1352px; */
-    background-color: #f3c7ff;
+    /*background-color: #f3c7ff;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,6 +129,7 @@ header{
     text-decoration: none;
     color: #A5A5A5;
     border-bottom: 4px solid #A5A5A5;
+    border-bottom: 4px solid transparent;
     border-top: 0;
     margin-top: 0;
 }
@@ -161,7 +162,7 @@ l {
 
 
 .open-shop-top{
-    background-color: gold;
+    /*background-color: gold;*/
 
     display: flex;
     justify-content: end;
@@ -198,7 +199,7 @@ h2 {
 
 .open-shop-bottom {
     overflow: auto;
-    background-color: green;
+    /*background-color: green;*/
     background-image: url("../images/Background.png");
     background-position: center;
     background-size: cover;
@@ -217,7 +218,7 @@ h2 {
     padding: 22px 157px 21px 157px;
     background-color: var(--color-primary);
     box-shadow: 5px 10px 14px #07ACE629;
-    box-shadow: 5px 10px 14px rgba(0, 102, 255, 0.6);
+    /*box-shadow: 5px 10px 14px rgba(0, 102, 255, 0.6);*/
     font-weight: 600;
 }
 
@@ -229,14 +230,14 @@ h2 {
 /*          STATS                ----------------------------------------------------------------------------  */
 
 .stats-section h2{
-    background-color: #b776f8;
+    /*background-color: #b776f8;*/
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
 .stats-section-articles {
-    background-color: #d7aeff;
+    /*background-color: #d7aeff;*/
     display: flex;
     justify-content: center;
     align-items: normal;
@@ -253,7 +254,7 @@ h2 {
     justify-content: left;
     flex-direction: column;
     align-items: center;
-    background-color: #d0d0d0;
+    /*background-color: #d0d0d0;*/
     text-align: center;
     font-family: 'Raleway', sans-serif;
     position: relative;
@@ -321,7 +322,7 @@ h2 {
 /* benefits-section */
 
 .benefits-section{
-    background-color: #00ff00;
+    background-color: #F7F7F7;
     padding: 105px 0px;
 }
 
@@ -338,14 +339,14 @@ h2 {
     justify-content: normal;
     flex-direction: column;
     justify-items: center;
-    background-color: #4ac94a;
+    /*background-color: #4ac94a;*/
 }
 
 .benefits-articles {
     display: flex;
     justify-content: normal;
     flex-direction: column;
-    background-color: #37da37;
+    /*background-color: #37da37;*/
 
 }
 
@@ -354,7 +355,7 @@ h2 {
     justify-content: space-between;
     margin-bottom: 37px;
     height: 370px;
-    background-color: #0e620e;
+    background-color: #ffffff;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
 }
@@ -363,7 +364,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: dodgerblue;
+    /*background-color: dodgerblue;*/
     margin-left: 36px;
     margin-right: 172px;
 }
@@ -406,7 +407,7 @@ h2 {
     align-items: normal;
     margin-left: -1px;
     padding-bottom: 38px;
-    background-color: yellow;
+    /*background-color: yellow;*/
     position: relative;
 }
 
@@ -436,13 +437,13 @@ h2 {
     display: flex;
     margin-bottom: 37px;
     height: 370px;
-    background-color: #4fc6f1;
+    background-color: white;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
 }
 
 .benefits-article-phone-box-left{
-    background-color: darkgoldenrod;
+    /*background-color: darkgoldenrod;*/
 }
 
 
@@ -452,7 +453,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
     width: 623px;
-    border: solid 1px #ff0000;
+    /*border: solid 1px #ff0000;*/
     /*background-color: rgba(255, 215, 0, 0.2);*/
     position: relative;
     height: 368px;
@@ -483,7 +484,7 @@ h2 {
 
 .benefits-article-phone-text {
     width: 501px;
-    background-color: yellow;
+    /*background-color: yellow;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -508,7 +509,7 @@ h2 {
 .benefits-article-megaphone {
     display: flex;
     height: 370px;
-    background-color: #118511;
+    /*background-color: #118511;*/
 }
 
 
@@ -518,7 +519,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
     width: 643px;
-    background-color: gold;
+    background-color: white;
     padding-left: 36px;
     padding-right: 34px;
     border: 1px solid #E8E9ED;
@@ -527,7 +528,7 @@ h2 {
 
 .benefits-article-megaphone-image {
     width: 451px;
-    background-color: yellow;
+    /*background-color: yellow;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -568,13 +569,17 @@ h2 {
     justify-content: center;
     flex-direction: column;
     width: 623px;
-    background-color: gold;
+    /*background-color: gold;*/
 }
 
 
 /*  --- PRICING --- */
+.pricing_bar{
+    background-color: transparent;
+}
+
 .pricing {
-    border: solid 1px red;
+    /*border: solid 1px red;*/
     margin-bottom: 100px;
 }
 
@@ -582,7 +587,7 @@ h2 {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 50px;
-    background-color: #e1f5ec;
+    /*background-color: #e1f5ec;*/
 }
 
 .pricing__boxes {
@@ -598,7 +603,7 @@ h2 {
     align-items: center;
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
-    background-color: #ffe4e4;
+    /*background-color: #ffe4e4;*/
     border-radius: 18px;
     /*height: 432px;*/
     text-align: center;
@@ -611,7 +616,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #4cfd01;
+    /*background-color: #4cfd01;*/
 }
 
 .btn-pricing {
@@ -637,7 +642,7 @@ h2 {
     line-height: 24px;
     color: #13253B;
     font-weight: bold;
-    background-color: #ffb74b;
+    /*background-color: #ffb74b;*/
 }
 
 
@@ -650,7 +655,7 @@ h2 {
     margin-top: 14px;
     margin-bottom: 5px;
     font-family: 'Open Sans', sans-serif;
-    background-color: #ff97aa;
+    /*background-color: #ff97aa;*/
 }
 
 .pricing__price--basic {
@@ -662,7 +667,7 @@ h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     color: black;
-    background-color: #ff7b7b;
+    /*background-color: #ff7b7b;*/
 }
 
 
@@ -675,7 +680,7 @@ h2 {
     width: 400px;
     margin: 0px 40px;
     box-shadow: 5px 10px 27px #07ACE629;
-    box-shadow: 5px 10px 27px rgba(18, 208, 255, 0.7);
+    /*box-shadow: 5px 10px 27px rgba(18, 208, 255, 0.7);*/
 }
 
 
@@ -691,7 +696,8 @@ h2 {
 
 .pricing__items {
     text-align: center;
-    background-color: yellow;
+    color: black;
+    /*background-color: yellow;*/
 }
 
 .pricing__item {
@@ -755,12 +761,12 @@ footer {
 /* ------------------- from -------------------- */
 
 .form-section-bar {
-    background-color: yellowgreen;
+    /*background-color: yellowgreen;*/
 }
 
 
 .form-section {
-    background-color: yellow;
+    /*background-color: yellow;*/
     display: flex;
     justify-content: space-between;
     align-items: normal;
@@ -773,7 +779,7 @@ footer {
     display: flex;
     justify-content: left;
     flex-direction: column;
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
 
 }
 
@@ -819,7 +825,7 @@ footer {
 
 .form_right_box{
     width: 50%;
-    background-color: #e3e3e5;
+    /*background-color: #e3e3e5;*/
 }
 
 
@@ -947,7 +953,7 @@ footer {
 
 /*              marketing check box    */
 .form_marketing {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 
