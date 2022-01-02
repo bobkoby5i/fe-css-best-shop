@@ -4,6 +4,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #ffffab;
 }
 .hidden {
     display: none !important;
@@ -35,7 +36,8 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1124px; /* 1352px; */
-    border: #ff4d00 0 solid;
+    border: #ff4d00 1px solid;
+
 }
 
 .container_big {
@@ -52,6 +54,11 @@ header{
     background-color: #ff5d87;
     box-shadow:  0 3px 6px rgb(0 0 0 / 16%);
     height: 70px;
+}
+
+.form_container {
+    margin: 0 auto;
+    max-width: 896px;
 }
 
 
@@ -207,10 +214,10 @@ h2 {
     border-radius: 40px;
     font-size: 16px;
     line-height: 22px;
-    padding: 20px 157px 23px 157px;
+    padding: 22px 157px 21px 157px;
     background-color: var(--color-primary);
     box-shadow: 5px 10px 14px #07ACE629;
-    box-shadow: 5px 10px 14px rgba(255, 0, 0, 0.6);
+    box-shadow: 5px 10px 14px rgba(0, 102, 255, 0.6);
     font-weight: 600;
 }
 
@@ -604,7 +611,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f86262;
+    background-color: #4cfd01;
 }
 
 .btn-pricing {
@@ -630,7 +637,7 @@ h2 {
     line-height: 24px;
     color: #13253B;
     font-weight: bold;
-    background-color: #ff4b4b;
+    background-color: #ffb74b;
 }
 
 
@@ -706,6 +713,7 @@ h2 {
     background-image: url("../images/Close.svg")
 }
 
+/* ------------------- footer -------------------- */
 
 footer {
     background-color: #F7F7F7;
@@ -738,3 +746,261 @@ footer {
     display: flex;
     gap: 20px;
 }
+
+
+
+/*  -----------------------   footer -------------------------*/
+
+
+/* ------------------- from -------------------- */
+
+.form-section-bar {
+    background-color: yellowgreen;
+}
+
+
+.form-section {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.form_left_box{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    background-color: aquamarine;
+
+}
+
+.form_left_box__title{
+    font-size: 49px;
+    line-height: 57px;
+    font-family: 'Raleway', sans-serif;
+}
+.form_left_box__text{
+    margin-top: 22px;
+    margin-bottom: 42px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.form_left_box__contact {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: var(--color-grey);
+    line-height: 0px;
+}
+
+.form_left_box__contact img {
+    margin-right: 10px;
+}
+
+.form_left_box__contact_mail {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.form_left_box__contact a{
+    text-decoration: none;
+}
+.form_left_box__contact_phone {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.form_right_box{
+    width: 50%;
+    background-color: #e3e3e5;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column
+}
+
+.form__label{
+    color: var(--color2);
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase
+}
+
+
+.form__field{
+    display: flex;
+    flex-direction: column
+}
+.form__field:nth-child(2){
+    margin-top: 42px;
+    color: blue;
+}
+
+.form_input {
+    padding: 15px;
+    border: none;
+    border-bottom: 1px #fa0303 solid;
+    border-bottom: 1px solid var(--color2);
+    background-color: transparent;
+    display:block;
+    width: 440px;
+}
+
+.form_input1{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    line-height: 2.625rem;
+}
+
+
+.form__consent{
+    margin-top: 30px;
+}
+
+.consent__text{
+    font-size: 12px;
+    line-height: 17px;
+}
+
+
+
+
+.contact-btn-submit:hover{
+    cursor: pointer
+}
+
+.contact-btn-submit {
+    border: 0px;
+    border-radius: 35px;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 20px 97px 19px 97px;
+    color: white;
+    display: inline-block;
+    background-color: var(--color2);
+    box-shadow: 5px 10px 14px #07ACE688;
+    font-weight: bold;
+}
+
+.contact-btn-row{
+    padding-top:20px;
+    display: flex;
+    justify-content: end;
+}
+
+
+
+
+/* check box my consent */
+
+.my_checkbox__consent input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+.my_checkbox__consent {
+    cursor: pointer;
+    display: flex;
+    color: #707070;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.my_checkbox__consent span {
+    height: 24px;
+    flex-shrink: 0;
+    flex-basis: 24px;
+
+    border: 1px solid #95989A;
+    border: 1px solid red;
+    border-radius: 4px;
+
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.my_checkbox__consent input:checked + span {
+    background-color: var(--color1);
+    background-image: url('../images/Checkmark.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*              marketing check box    */
+.form_marketing {
+    margin-top: 30px;
+}
+
+
+.form_marketing__label_and_checkbox {
+    cursor: pointer;
+    display: block;
+    font-size: 1.375rem;
+    margin-bottom: 12px;
+    padding-left: 35px;
+    position: relative
+}
+
+.form_marketing__label_and_checkbox input {
+    cursor: pointer;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0
+}
+
+.form_marketing__text {
+    cursor: pointer;
+    display: flex;
+    color: #707070;
+    color: blue;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+
+.form_marketing__label_and_checkbox .marketing__checkbox {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 25px
+}
+
+.form_marketing__label_and_checkbox input:checked ~ .marketing__checkbox {
+    background-image: url("../images/Checkmark.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 50%
+}
+
+.form_marketing__label_and_checkbox .form_marketing__text {
+    color: #707070;
+    font-size: .75rem;
+    line-height: 17px;
+}
+
