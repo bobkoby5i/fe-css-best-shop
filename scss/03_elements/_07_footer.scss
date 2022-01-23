@@ -16,8 +16,8 @@
     text-align: center;
 
 
-    .footer_left_box1 {
-        background-color: gold;
+    .footer_left_box {
+        background-color: rgb(255, 244, 179);
         display: flex;
 
         justify-content: center;
@@ -32,8 +32,8 @@
         
         }
     }
-    .footer_right_box2 {
-        background-color: blue;
+    .footer_right_box {
+        background-color: rgb(181, 181, 255);
         display: flex;
         gap: 20px;
     }

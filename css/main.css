@@ -148,7 +148,8 @@ h2 {
 .stats-section h2 {
   text-align: center;
   margin-bottom: 25px;
-  background-color: gold;
+  background-color: #fff6c4;
+  border: solid 1px gold;
 }
 @media (max-width: 700px) {
   .stats-section h2 {
@@ -172,7 +173,8 @@ h2 {
 
 .stats-article {
   margin-top: 25px;
-  background-color: greenyellow;
+  background-color: #f2ffdf;
+  border: solid 1px greenyellow;
   width: 176px;
   display: flex;
   justify-content: left;
@@ -251,21 +253,21 @@ h2 {
   color: #A5A5A5;
   text-align: center;
 }
-.page-footer-content .footer_left_box1 {
-  background-color: gold;
+.page-footer-content .footer_left_box {
+  background-color: #fff4b3;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: left;
 }
-.page-footer-content .footer_left_box1 .footer_text {
+.page-footer-content .footer_left_box .footer_text {
   font-size: 11px;
   line-height: 15px;
   color: #A5A5A5;
   margin-top: 6px;
 }
-.page-footer-content .footer_right_box2 {
-  background-color: blue;
+.page-footer-content .footer_right_box {
+  background-color: #b5b5ff;
   display: flex;
   gap: 20px;
 }

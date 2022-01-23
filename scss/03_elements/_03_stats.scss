@@ -13,7 +13,8 @@ $section_stats_break_point: 700px;
     h2 {
         text-align: center;
         margin-bottom: 25px; 
-        background-color: gold;
+        background-color: rgb(255, 246, 196);
+        border: solid 1px gold;        
         @media (max-width: $section_stats_break_point) {
             margin-bottom: 0px;
         }        
@@ -36,7 +37,8 @@ $section_stats_break_point: 700px;
 
 .stats-article {
     margin-top: 25px;
-    background-color: greenyellow;
+    background-color: rgb(242, 255, 223);
+    border: solid 1px greenyellow;
     width: 176px;
     display: flex;
     justify-content: left;
