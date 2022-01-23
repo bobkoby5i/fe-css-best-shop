@@ -49,6 +49,7 @@ h2 {
 
 .open-shop-section {
   min-width: 375px;
+  min-height: 530px;
   display: flex;
   flex-direction: column;
   justify-content: end;

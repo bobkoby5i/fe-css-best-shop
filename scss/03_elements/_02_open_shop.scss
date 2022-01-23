@@ -2,6 +2,7 @@ $section_open_shop_break_point: 800px;
 
 .open-shop-section{
     min-width: $minialna_szerokosc;
+    min-height: 530px;
     display: flex;
     flex-direction: column;
     justify-content: end;
