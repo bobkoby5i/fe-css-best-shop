@@ -47,6 +47,91 @@ h2 {
   flex-direction: column;
 }
 
+.open-shop-section {
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  /*background-color: #ffffff;*/
+  height: calc(100vh - 70px);
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+}
+
+.open-shop-top {
+  /*background-color: gold;*/
+  min-width: 375px;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 130px;
+  /*height: 100%;*/
+  /*background-color: yellow;*/
+}
+.open-shop-top h1 {
+  font-size: 49px;
+  line-height: 57px;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+.open-shop-top h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+}
+.open-shop-top p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Raleway", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 38px;
+}
+@media (max-width: 800px) {
+  .open-shop-top {
+    padding-top: 100px;
+  }
+  .open-shop-top p {
+    margin-bottom: 28px;
+  }
+}
+
+.open-shop-bottom {
+  overflow: auto;
+  /*background-color: green;*/
+  background-image: url("../images/Background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 230px;
+}
+
+.open-shop-btn {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 40px;
+  width: 440px;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 22px 0 21px 0;
+  background-color: #08a6e4;
+  box-shadow: 5px 10px 14px #07ACE629;
+  /*box-shadow: 5px 10px 14px rgba(0, 102, 255, 0.6);*/
+  font-weight: 600;
+}
+@media (max-width: 800px) {
+  .open-shop-btn {
+    width: 310px;
+  }
+}
+.open-shop-btnhover {
+  cursor: pointer;
+}
+
 .stats-section {
   padding-top: 100px;
   padding-bottom: 120px;
