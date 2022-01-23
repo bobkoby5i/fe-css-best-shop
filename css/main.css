@@ -1,2 +1,97 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.25rem;
+}
+
+.container {
+  max-width: 1000px;
+  padding-left: 17px;
+  padding-right: 17px;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+.page-header-row {
+  min-width: 500px;
+}
+
+.page-header {
+  height: 70px;
+  background-color: greenyellow;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page-footer-row {
+  min-width: 500px;
+  box-shadow: 0px -5px 40px #00000029;
+  background-color: #F7F7F7;
+}
+
+.page-footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 17px;
+  color: #A5A5A5;
+  text-align: center;
+}
+.page-footer-content .footer_left_box1 {
+  background-color: gold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+.page-footer-content .footer_left_box1 .footer_text {
+  font-size: 11px;
+  line-height: 15px;
+  color: #A5A5A5;
+  margin-top: 6px;
+}
+.page-footer-content .footer_right_box2 {
+  background-color: blue;
+  display: flex;
+  gap: 20px;
+}
+
+.footer_logo {
+  font-size: 26px;
+  line-height: 30px;
+  font-family: "Raleway", sans-serif;
+  color: #08a6e4;
+  text-decoration: none;
+}
+
+/*  -----------------------   footer -------------------------*/
+.klasa {
+  border-radius: 35px;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+// .header_container {
+//     // margin: 0 auto;
+//     // max-width: 1352px; /* 1352px; */
+//     // /*background-color: #f3c7ff;*/
+//     // padding-left: 10px;
+//     // padding-right: 10px;  
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     height: 70px;
+//   }
+
+  
+.page-header-row {
+    min-width: $minialna_szerokosc;    
+}
+
+  
+.page-header{
+    height: 70px;
+
+    background-color: greenyellow;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

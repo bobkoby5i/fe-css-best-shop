@@ -1,0 +1,63 @@
+@use "sass:math";
+
+$column: 12;
+$gap: 5px;
+
+.container{
+  max-width: 1200px;
+  padding-left: $gap;
+  padding-right: $gap;
+  margin: 0 auto;
+}
+
+.row {
+  //gap: 10%;
+  margin-left: -$gap;
+  margin-right: -$gap;
+  // display: flex;
+  // justify-content: center;
+
+  [class^="col-"] {
+    padding: 0 $gap;
+    box-sizing: border-box;
+    margin-bottom: $gap * 2;    
+  }
+
+  @media (min-width: 400px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    @for $i from 1 through $column {
+      .col-sm-#{$i} {
+        width: math.div(100%, $column) * $i;
+      }
+    }
+  }
+
+  @media (min-width: 600px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    @for $i from 1 through $column {
+      .col-md-#{$i} {
+        width: math.div(100%, $column) * $i;
+      }
+    }
+  }  
+
+  @media (min-width: 1000px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    @for $i from 1 through $column {
+      .col-lg-#{$i} {
+        width: math.div(100%, $column) * $i;
+      }
+    }
+  }
+
+}
+
+.row:last-of-type{
+  margin-bottom: 0px;
+}

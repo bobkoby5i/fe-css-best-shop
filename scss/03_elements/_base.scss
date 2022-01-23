@@ -1,0 +1,39 @@
+// style bazowe 
+
+* {
+  box-sizing: border-box;
+}
+  
+body {
+  font-family: $font-open-sans;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+  
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: $font-raleway;
+  font-size: 2.25rem;
+}
+  
+.container {
+  max-width: 1000px; //1352
+  padding-left: 17px;
+  padding-right: 17px;
+  // max-width: 1124px; /* 1352px; */
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+
