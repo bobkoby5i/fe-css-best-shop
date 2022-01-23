@@ -34,7 +34,7 @@ h2 {
 }
 
 .page-header-row {
-  min-width: 500px;
+  min-width: 375px;
 }
 
 .page-header {
@@ -47,8 +47,110 @@ h2 {
   flex-direction: column;
 }
 
+.stats-section {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  min-width: 375px;
+  /*background-color: #b776f8;*/
+}
+@media (max-width: 700px) {
+  .stats-section {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+}
+.stats-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  background-color: gold;
+}
+@media (max-width: 700px) {
+  .stats-section h2 {
+    margin-bottom: 0px;
+  }
+}
+
+.stats-section-articles {
+  /*background-color: #d7aeff;*/
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: flex-start;
+}
+@media (max-width: 700px) {
+  .stats-section-articles {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.stats-article {
+  margin-top: 25px;
+  background-color: greenyellow;
+  width: 176px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: center;
+  /*background-color: #d0d0d0;*/
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+}
+.stats-article h4 {
+  color: #000;
+  margin-top: 13px;
+  margin-bottom: 19px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 6px;
+}
+.stats-article p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #A5A5A5;
+  font-weight: normal;
+  margin: 0px 35px;
+}
+
+.statistics__img_person {
+  position: relative;
+  left: 45%;
+}
+
+.statistics__img_eye {
+  position: relative;
+  left: 47%;
+  top: 14px;
+}
+
+.statistics__img_catalog {
+  position: relative;
+  left: 50%;
+  top: 6px;
+}
+
+.circle, .circle_color3, .circle_color2, .circle_color1 {
+  border-radius: 50%;
+  height: 63px;
+  width: 63px;
+}
+
+.circle_color1 {
+  background-color: #fb3b64;
+}
+
+.circle_color2 {
+  background-color: #08a6e4;
+}
+
+.circle_color3 {
+  background-color: #55dfb4;
+}
+
 .page-footer-row {
-  min-width: 500px;
+  min-width: 375px;
   box-shadow: 0px -5px 40px #00000029;
   background-color: #F7F7F7;
 }
