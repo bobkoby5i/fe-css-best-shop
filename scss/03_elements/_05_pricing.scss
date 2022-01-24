@@ -8,14 +8,10 @@
 }
 
 
-/*  --- PRICING --- */
-.pricing_bar{
-    min-width: $minialna_szerokosc;
-    background-color: transparent;
 
-}
 
 .pricing {
+    min-width: $minialna_szerokosc;
     margin-bottom: 100px;
     h2 {
         text-align: center;
