@@ -2,9 +2,11 @@
 @import "01_settings"; // colors fonts
 @import "03_elements/base"; // base and components
 @import "03_elements/header"; // base and components
-@import "03_elements/_02_open_shop"; // base and components
-@import "03_elements/_03_stats"; // base and components
-@import "03_elements/_07_footer"; // base and components
+@import "03_elements/buttons"; // base and components
+@import "03_elements/02_open_shop"; // base and components
+@import "03_elements/03_stats"; // base and components
+@import "03_elements/05_pricing"; // base and components
+@import "03_elements/07_footer"; // base and components
 
 .klasa {
     border-radius: $button-radius;

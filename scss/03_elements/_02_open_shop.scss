@@ -8,7 +8,7 @@ $section_open_shop_break_point: 800px;
     justify-content: end;
     /*background-color: #ffffff;*/
     height: calc( 100vh - 70px );
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-open-sans;
     font-weight: normal;
 }
 
@@ -28,20 +28,14 @@ $section_open_shop_break_point: 800px;
     h1{
         font-size: 49px;
         line-height: 57px;
-        margin: 0;
         font-family: $font-raleway;
+        margin: 0;
     }
     
-    h2 {
-        font-family: $font-raleway;
-        font-size: 36px;
-        line-height: 42px;
-    }
+
     p {
         text-align: center;
-        font-size: 16px;
-        line-height: 22px;
-        font-family: $font-raleway;
+        @include my_paragraf_text;
         margin-top: 20px;
         margin-bottom: 38px;
     }
@@ -55,14 +49,7 @@ $section_open_shop_break_point: 800px;
 }
 
 
-
-
-
-
-
 .open-shop-bottom {
-    overflow: auto;
-    /*background-color: green;*/
     background-image: url("../images/Background.png");
     background-position: center;
     background-size: cover;
@@ -77,18 +64,19 @@ $section_open_shop_break_point: 800px;
     display: inline-block;
     text-decoration: none;
     text-align: center;
+    padding: 22px 0 21px 0;
+    font-weight: 600;
     border-radius: 40px;
     width: 440px;
+    @include my_paragraf_text;
+
+    
     @media (max-width: $section_open_shop_break_point) {
         width: 310px;
     }    
-    font-size: 16px;
-    line-height: 22px;
-    padding: 22px 0 21px 0;
     background-color: $color-primary;
-    box-shadow: 5px 10px 14px #07ACE629;
-    /*box-shadow: 5px 10px 14px rgba(0, 102, 255, 0.6);*/
-    font-weight: 600;
+    box-shadow: 5px 10px 14px #0049649c;
+    // box-shadow: 5px 10px 14px rgba(0, 102, 255, 0.6);
     &hover{
         cursor: pointer;
     }

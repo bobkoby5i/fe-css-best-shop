@@ -1,0 +1,228 @@
+.pricing_container {
+    margin: 0 auto;
+    max-width: $szerokosc_pricing; 
+    padding-left: 10px;
+    padding-right: 10px;
+
+    /*border: #ff4d00 0 solid;*/
+}
+
+
+/*  --- PRICING --- */
+.pricing_bar{
+    min-width: $minialna_szerokosc;
+    background-color: transparent;
+
+}
+
+.pricing {
+    margin-bottom: 100px;
+    h2 {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 50px; 
+    }    
+    @media (max-width: $section_pricing_break_point) {
+        margin-bottom: 0px;
+        h2 {
+            margin-top: 53px;
+            margin-bottom: 14px;
+        }
+    } 
+
+}
+
+
+
+.pricing__boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: $section_pricing_break_point) {
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    .pricing__box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: var(--accent-color);
+        border: 1px solid var(--accent-color);
+        /*background-color: #ffe4e4;*/
+        border-radius: 18px;
+        /*height: 432px;*/
+        text-align: center;
+        width: 370px;
+        position: relative;
+
+        .pricing__details {
+            width: 100%;
+            // background-color: rgb(236, 255, 130);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 61px;
+
+            .pricing__summary {
+                margin-bottom: 60px;
+                margin-top: 34px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                // background-color: sandybrown;
+                .pricing__type{ /* Basic Professional Premium */
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 21px;
+                    line-height: 24px;
+                    color: #13253B;
+                    font-weight: bold;
+                    /*background-color: #ffb74b;*/
+                }
+                .pricing__price { /* 0$ 25$ $60*/
+                    font-weight: 300;
+                    font-size: 46px;
+                    line-height: 64px;
+                    margin-top: 14px;
+                    margin-bottom: 5px;
+                    font-family: 'Open Sans', sans-serif;
+                    /*background-color: #ff97aa;*/
+                }     
+            }  
+            .pricing__items {
+                // background-color: sienna;
+                text-align: left;
+                color: black;
+                .pricing__item {
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                    &:before {
+                        background-image: url("../images/Ckechmark-1.svg");
+                        content: "";
+                        display: inline-block;
+                        height: 11px;
+                        margin-right: 10px;
+                        width: 11px
+                    }   
+                    &--not:before {
+                        background-image: url("../images/Close.svg")
+                    }             
+                }
+            }            
+        }
+        @media (max-width: $section_pricing_break_point) {
+            width: 293px;
+            margin-bottom: 54px;
+            .pricing__details {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 0px;
+                .pricing__summary {
+                    margin-top: 0px;
+                    margin-bottom: 0px;                    
+                    width: 50%;
+                }
+                .pricing__items {
+                    margin-bottom: 51px;
+                    margin-top: 31px;
+                    width: 50%;
+                }
+            }
+    
+        }
+    }                
+
+
+}
+
+.btn-pricing {
+    background-color: var(--accent-color);
+    width: 150px;
+    height: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    border-radius: 23px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    bottom: -25px;
+    position: relative;
+}
+
+
+
+.btn-pricing2 {
+    background-color: var(--accent-color);
+    width: 150px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: white;
+    font-weight: bold;    
+    border-radius: 23px;
+    padding-top: 16px;
+    padding-bottom: 16px;    
+    // z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+
+
+
+
+
+.pricing__price--basic {
+    margin-bottom: 17px;
+}
+
+.pricing__limited { /* text:limited offer */
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: black;
+    /*background-color: #ff7b7b;*/
+}
+
+
+.pricing__box--basic {
+    --accent-color: #{$color1};
+}
+
+
+
+.pricing__box--premium {
+    --accent-color: #{$color3};
+}
+
+// tu jest problem z moca selektorow musialem tego tyle nabic zeby przebic. nie wiem jak inaczej. na razie dziala. 
+.pricing__boxes  .pricing__box--professional .pricing__details .pricing__items .pricing__item {
+    margin-bottom: 25px
+}    
+
+.pricing__boxes .pricing__box--professional {
+    --accent-color: #{$color2};
+    width: 400px;
+    @media (max-width: $section_pricing_break_point) {
+        width: 339px;
+        margin-bottom: 54px;
+    }    
+    margin: 0px 40px;
+    box-shadow: 5px 10px 27px #07ACE629;
+    box-shadow: 5px 10px 27px rgba(18, 208, 255, 0.7);
+
+}

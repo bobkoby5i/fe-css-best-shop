@@ -1,11 +1,11 @@
-$section_stats_break_point: 700px;
+
 
 .stats-section{
     padding-top: 100px;
     padding-bottom: 120px;
     min-width: $minialna_szerokosc;
 
-    @media (max-width: $section_stats_break_point) {
+    @media (max-width: $section_pricing_break_point) {
         padding-top: 50px;
         padding-bottom: 25px;
     }
