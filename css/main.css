@@ -30,21 +30,12 @@ h2 {
   padding-left: 17px;
   padding-right: 17px;
   margin: 0 auto;
-  border: 1px solid blue;
 }
-
-.page-header-row {
-  min-width: 375px;
-}
-
-.page-header {
-  height: 70px;
-  background-color: greenyellow;
-  color: black;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+@media (max-width: 1352px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
 }
 
 .my_btn {
@@ -53,6 +44,139 @@ h2 {
   text-decoration: none;
   text-align: center;
   border-radius: 40px;
+}
+
+.header {
+  min-width: 375px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  color: black;
+  text-align: center;
+}
+
+.logo {
+  font-size: 32px;
+  line-height: 37px;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: #08A6E4;
+}
+
+.navigation .header__nav {
+  display: flex;
+  border-top: 0;
+  margin-top: 0;
+}
+.navigation .header__nav .nav__element {
+  padding: 0px 26px;
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: bold;
+}
+@media (max-width: 1000px) {
+  .navigation .header__nav .nav__element {
+    padding: 0px 0px;
+  }
+}
+@media (max-width: 600px) {
+  .navigation .header__nav .nav__element {
+    min-width: 375px;
+    background-color: whitesmoke;
+  }
+}
+.navigation .header__nav .nav__element:first-child {
+  padding-left: 0;
+}
+.navigation .header__nav .nav__element:last-child {
+  padding-right: 0;
+}
+.navigation .header__nav .nav__link {
+  padding: 28px 26px 23px 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #A5A5A5;
+  border-bottom: 4px solid transparent;
+}
+.navigation .header__nav .nav__link:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 4px solid #08a6e4;
+}
+@media (max-width: 600px) {
+  .navigation .header__nav .nav__link {
+    padding: 28px 10px 23px 10px;
+    color: #08a6e4;
+  }
+}
+.navigation .header__nav {
+  display: flex;
+}
+@media (max-width: 600px) {
+  .navigation .header__nav {
+    position: absolute;
+    left: 0;
+    top: 95px;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0.9;
+    width: 100%;
+    padding-bottom: 10px;
+    display: none;
+  }
+  .navigation .header__nav .nav__element {
+    padding: 0;
+  }
+  .navigation .header__nav .nav__link {
+    display: block;
+    padding: 14px 20px;
+  }
+}
+
+.menu__btn {
+  display: none;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+}
+@media (max-width: 600px) {
+  .menu__btn:checked ~ .header__nav {
+    display: flex;
+  }
+  .menu__btn:checked ~ .menu__toggle span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 8px);
+  }
+  .menu__btn:checked ~ .menu__toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu__btn:checked ~ .menu__toggle span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -7px);
+  }
+}
+.menu__toggle {
+  display: none;
+}
+.menu__toggle span {
+  background-color: #08a6e4;
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin-bottom: 5px;
+  transition: 0.3s all ease-in-out;
+}
+.menu__toggle span:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 600px) {
+  .menu__toggle {
+    display: block;
+  }
 }
 
 .open-shop-section {
@@ -460,20 +584,20 @@ h2 {
   color: #A5A5A5;
   text-align: center;
 }
-.page-footer-content .footer_left_box {
+.page-footer-content__left_box {
   background-color: #fff4b3;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: left;
 }
-.page-footer-content .footer_left_box .footer_text {
+.page-footer-content__left_box .footer_text {
   font-size: 11px;
   line-height: 15px;
   color: #A5A5A5;
   margin-top: 6px;
 }
-.page-footer-content .footer_right_box {
+.page-footer-content__right_box {
   background-color: #b5b5ff;
   display: flex;
   gap: 20px;
@@ -487,7 +611,6 @@ h2 {
   text-decoration: none;
 }
 
-/*  -----------------------   footer -------------------------*/
 .klasa {
   border-radius: 35px;
 }

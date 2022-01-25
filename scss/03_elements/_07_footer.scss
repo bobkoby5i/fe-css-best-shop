@@ -16,10 +16,9 @@
     text-align: center;
 
 
-    .footer_left_box {
+    &__left_box {
         background-color: rgb(255, 244, 179);
         display: flex;
-
         justify-content: center;
         flex-direction: column;
         text-align: left;
@@ -32,7 +31,7 @@
         
         }
     }
-    .footer_right_box {
+    &__right_box {
         background-color: rgb(181, 181, 255);
         display: flex;
         gap: 20px;
@@ -42,12 +41,7 @@
 .footer_logo{
     font-size: 26px;
     line-height: 30px;
-    font-family: 'Raleway', sans-serif;
+    font-family: $font-raleway;
     color: $color-primary;
     text-decoration: none;
 }
-
-
-
-
-/*  -----------------------   footer -------------------------*/

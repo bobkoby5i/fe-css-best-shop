@@ -29,11 +29,16 @@ h2 {
   
 .container {
   max-width: 1000px; //1352
+
   padding-left: 17px;
   padding-right: 17px;
   // max-width: 1124px; /* 1352px; */
   margin: 0 auto;
-  border: 1px solid blue;
+  // border: 1px solid blue;
+  @include notebook {
+    width: 100%;
+    padding: 0 10px;
+  }  
 }
 
 

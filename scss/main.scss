@@ -1,12 +1,14 @@
-@import "00_generic";  // reset normalize
-@import "01_settings"; // colors fonts
-@import "03_elements/base"; // base and components
-@import "03_elements/header"; // base and components
-@import "03_elements/buttons"; // base and components
-@import "03_elements/02_open_shop"; // base and components
-@import "03_elements/03_stats"; // base and components
-@import "03_elements/05_pricing"; // base and components
-@import "03_elements/07_footer"; // base and components
+@import "00_generic";  
+@import "01_settings"; 
+@import "03_elements/base";
+@import "03_elements/buttons";
+@import "03_elements/header"; 
+@import "03_elements/navigation"; 
+// @import "03_elements/header_done"; 
+@import "03_elements/02_open_shop"; 
+@import "03_elements/03_stats"; 
+@import "03_elements/05_pricing"; 
+@import "03_elements/07_footer"; 
 
 .klasa {
     border-radius: $button-radius;
