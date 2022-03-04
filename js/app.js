@@ -25,6 +25,7 @@ const $total_price      = document.getElementById("total-price").querySelector("
 
 function calcPrice(event){
     console.log("calcPrice()");
+    $price_total = 0;
     $price_total += $cnt_products * 0.5;
     $price_total += $cnt_orders * 0.25;
     $price_total += $price_package;
