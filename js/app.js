@@ -1,5 +1,17 @@
 console.log("hello3");
 
+const $pricelist = {
+    'product'     : 0.5,
+    'order'       : 0.25, 
+    'accounting'  : 35, 
+    'terminal'    : 5,
+    package: {
+        basic: 20,
+        professional: 40,
+        premium: 60
+    }  
+};
+
 let $price_total    = 0;
 let $price_package  = 0;
 let $price_account  = 0;
@@ -21,13 +33,23 @@ const $chk_terminal     = document.querySelector("#terminal");
 const $package          = document.querySelector("#package");
 const $summary__total   = document.getElementById("total-price");
 const $total_price      = document.getElementById("total-price").querySelector(".total__price");
+const $calc__summary    = document.querySelector(".calc__summary ul").children;
+
+const $calc__summary_products   = $calc__summary[0];
+const $calc__summary_orders     = $calc__summary[1];
+const $calc__summary_package    = $calc__summary[2];
+const $calc__summary_accounting = $calc__summary[3];
+const $calc__summary_terminal   = $calc__summary[4];
+
+// 'a[data-a="1"]'
+
 
 
 function calcPrice(event){
     console.log("calcPrice()");
     $price_total = 0;
-    $price_total += $cnt_products * 0.5;
-    $price_total += $cnt_orders * 0.25;
+    $price_total += $cnt_products * 0.50;
+    $price_total += $cnt_orders   * 0.25;
     $price_total += $price_package;
     $price_total += $price_account;
     $price_total += $price_terminal;
@@ -35,87 +57,62 @@ function calcPrice(event){
 
 function calc_show_total(event){
     console.log("calc_show_total()");
-    $summary__total.style.display   = "block";
+    $summary__total.style.display   = "flex";
     calcPrice();
     
     $total_price.innerText = "$" + $price_total;
 }
 
-// $ingridients.forEach(function(item) {
-//     item.addEventListener('change', calcPrice);
-// });
-
-
-
-
-function handle_chk_accounting(event){
-    console.log("handle_chk_accounting()");
-    console.log(event);
-
-    $price_account = 0;
-    if ($chk_accounting.checked) $price_account = 35;
-    calc_show_total();    
+function round(num){
+    let num2 = Math.round((num + Number.EPSILON) * 100) / 100;
+    return num2.toFixed(2);
 }
 
-function handle_chk_terminal(event){
-    console.log("handle_chk_terminal()");
-    console.log(event);
-    $price_terminal = 0;
-    console.log($chk_terminal.checked);
-    if ($chk_terminal.checked) $price_terminal = 5;
-    console.log($price_terminal);
-    calc_show_total();
+
+function display_list_item_values(p_list_item, p_calc, p_price) {
+    console.log(p_calc);
+    console.log(p_price);
+    $calc  = p_list_item.querySelector(".item__calc");
+    $price = p_list_item.querySelector(".item__price");
+    p_list_item.style.display = "flex";
+    if ($calc) $calc.innerText = p_calc;
+    $price.innerText = "$" + p_price;
 }
+
 
 function handle_inp_products(event){
     console.log("VALUE:",event.target.value);
     $cnt_products = Number(event.target.value);
+    $calc__summary_products.style.display = "none";
+    if ($cnt_products>0) display_list_item_values($calc__summary_products, $cnt_products + " * $ "+ $pricelist.product , round($cnt_products * $pricelist.product));
     calc_show_total();
 }
 
 function handle_inp_orders(event){
     console.log("VALUE:",event.target.value);
     $cnt_orders = Number(event.target.value);
+    $calc__summary_orders.style.display = "none";
+    if ($cnt_orders>0) display_list_item_values($calc__summary_orders, $cnt_orders + " * $ " + $pricelist.order, round($cnt_orders * $pricelist.order));
     calc_show_total();
 }
 
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
+
   
 
 function handle_package(event){
+
     console.log("handle_package()");
     // console.log(event);
     // console.log(event.target);
 
     const $select__dropdown = $package.querySelector(".select__dropdown");
     const $select__input    = $package.querySelector(".select__input");
-    
-    
 
-    $package_type = event.target.getAttribute("data-value");
+    let $package_type = event.target.getAttribute("data-value");
     // console.log("ATTRIBUTE:", $package_type);
-
-    switch ($package_type) {
-        case 'basic':
-            console.log('set basic');
-            $price_package = 20;
-            $select__input.innerText = capitalizeFirstLetter($package_type);
-            break;
-        case 'professional':
-            console.log('set professional');
-            $price_package = 40;
-            $select__input.innerText = capitalizeFirstLetter($package_type);
-            break;
-        case 'premium':
-            console.log('set premium');
-            $price_package = 60;
-            $select__input.innerText = capitalizeFirstLetter($package_type);
-            break;
-      }
-
-
 
     // console.log($select__dropdown.style.display);
     if ($select__dropdown.style.display   == "block") {
@@ -125,12 +122,50 @@ function handle_package(event){
     }
     // console.log($select__dropdown.style.display);
 
-    console.log("price_package:" + $price_package)
+
+    if ($package_type) {
+        console.log($package_type);
+        $price_package = $pricelist.package[$package_type];
+
+        $package_type = capitalizeFirstLetter($package_type);
+        $select__input.innerText = $package_type;
+
+        display_list_item_values($calc__summary_package, $package_type, $price_package);
+        $select__dropdown.style.display   = "none";
+    }  else {
+        console.log("Package not selected");
+    }
+
+
+
+    console.log("price_package:" + $price_package);
 
     calc_show_total();
     
 }
 
+function handle_chk_accounting(event){
+    console.log("handle_chk_accounting()");
+    console.log(event);
+
+    $price_account = (($chk_accounting.checked) ? $pricelist.accounting : 0);
+    $calc__summary_accounting.style.display = "none";
+    display_list_item_values($calc__summary_accounting, "", $price_account);
+    calc_show_total();    
+}
+
+function handle_chk_terminal(event){
+    console.log("handle_chk_terminal()");
+    console.log(event);
+    // console.log($chk_terminal.checked);
+
+    $price_terminal = 0;
+    if ($chk_terminal.checked) $price_terminal = $pricelist.terminal;
+    $calc__summary_terminal.style.display = "none";
+    display_list_item_values($calc__summary_terminal, "", $price_terminal );
+
+    calc_show_total();
+}
 
 
 // function hide_all(){
@@ -143,8 +178,8 @@ function handle_package(event){
 // hide_all();
 calc_show_total();
 
-$chk_accounting.addEventListener('click', handle_chk_accounting);
-$chk_terminal.addEventListener('click', handle_chk_terminal);
 $inp_products.addEventListener('input', handle_inp_products);
 $inp_orders.addEventListener('input', handle_inp_orders);
 $package.addEventListener('click', handle_package);
+$chk_accounting.addEventListener('click', handle_chk_accounting);
+$chk_terminal.addEventListener('click', handle_chk_terminal);
