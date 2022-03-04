@@ -28,6 +28,7 @@ function buildStyles() {
 function watcher(done) {
     gulp.watch("./scss/**/*.scss", gulp.series(buildStyles));
     gulp.watch("./*.html").on('change', browserSync.reload);
+    gulp.watch("./js/*.js", browserSync.reload);
     done();
 }
 
